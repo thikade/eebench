@@ -47,6 +47,91 @@ public class CdiBenchBean {
             methodInterceptedBean.getMeaningOfHalfLife();
         }
 
-        return "OK";
+        return "OK-zero";
     }
+
+    public String getState1() {
+        for (int i = 0; i < NUM_ITERATIONS; i++) {
+            simpleApplicationScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // simpleRequestScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // classInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfHalfLife();
+        }
+
+        return "OK-1";
+    }
+    
+    public String getState2() {
+        for (int i = 0; i < NUM_ITERATIONS; i++) {
+            // simpleApplicationScopedBeanWithoutInterceptor.theMeaningOfLife();
+            simpleRequestScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // classInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfHalfLife();
+        }
+
+        return "OK-2";
+    }
+    
+    public String getState3() {
+        for (int i = 0; i < NUM_ITERATIONS; i++) {
+            // simpleApplicationScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // simpleRequestScopedBeanWithoutInterceptor.theMeaningOfLife();
+            classInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfHalfLife();
+        }
+
+        return "OK-3";
+    }
+    
+    public String getState4() {
+        for (int i = 0; i < NUM_ITERATIONS; i++) {
+            // simpleApplicationScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // simpleRequestScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // classInterceptedBean.getMeaningOfLife();
+            methodInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfHalfLife();
+        }
+
+        return "OK-4";
+    }
+    
+    public String getState5() {
+        for (int i = 0; i < NUM_ITERATIONS; i++) {
+            // simpleApplicationScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // simpleRequestScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // classInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfLife();
+            methodInterceptedBean.getMeaningOfHalfLife();
+        }
+
+        return "OK-5";
+    }
+
+    public String getState_1_2_5() {
+        for (int i = 0; i < NUM_ITERATIONS; i++) {
+            simpleApplicationScopedBeanWithoutInterceptor.theMeaningOfLife();
+            simpleRequestScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // classInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfLife();
+            methodInterceptedBean.getMeaningOfHalfLife();
+        }
+
+        return "OK-1-2-5";
+    }
+
+    public String getState_1_2() {
+        for (int i = 0; i < NUM_ITERATIONS; i++) {
+            simpleApplicationScopedBeanWithoutInterceptor.theMeaningOfLife();
+            simpleRequestScopedBeanWithoutInterceptor.theMeaningOfLife();
+            // classInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfLife();
+            // methodInterceptedBean.getMeaningOfHalfLife();
+        }
+
+        return "OK-1-2";
+    }
+
 }
