@@ -109,7 +109,7 @@
                     <warFile>${project.build.directory}/${project.build.finalName}</warFile>
                     <!-- path that is used by tomEE in the tomee:deploy and tomee:undeploy goal -->
                     <path>${project.build.directory}/apache-tomee/webapps${project.build.finalName}</path>
-                    <args>-Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -Xms128m -Xmx4096m -XX:PermSize=196m -XX:MaxPermSize=128m -XX:+DisableExplicitGC</args>
+                    <args>-Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -Xms128m -Xmx4096m -XX:PermSize=196m -XX:MaxPermSize=196m -XX:+DisableExplicitGC</args>
                 </configuration>
                 <dependencies>
                     <dependency>
