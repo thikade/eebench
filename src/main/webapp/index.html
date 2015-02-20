@@ -11,14 +11,16 @@
 <h2>links for starting the bench manually</h2>
 <ul>
     <li><a href="jsfbench.xhtml">JSF benchmark</a></li>
-    <li><a href="cdibench.xhtml">CDI/EJB benchmark</a></li>
-    <li><a href="cdibench1.xhtml">CDI/EJB benchmark 1</a></li>
-    <li><a href="cdibench2.xhtml">CDI/EJB benchmark 2</a></li>
-    <li><a href="cdibench3.xhtml">CDI/EJB benchmark 3</a></li>
-    <li><a href="cdibench4.xhtml">CDI/EJB benchmark 4</a></li>
-    <li><a href="cdibench5.xhtml">CDI/EJB benchmark 5</a></li>
-    <li><a href="cdibench125.xhtml">CDI/EJB benchmark 125</a></li>
-    <li><a href="cdibench12.xhtml">CDI/EJB benchmark 12</a></li>
+    <li><a href="cdibench.xhtml">CDI/EJB benchmark (5 different  bean-method calls with/wo interceptors in a loop)</a></li>
+    <li><ul>
+        <li><a href="cdibench1.xhtml">CDI/EJB benchmark 1: only one application-scoped bean-method called in a loop</a></li>
+        <li><a href="cdibench2.xhtml">CDI/EJB benchmark 2: only one request-scoped bean-method called in a loop</a></li>
+        <li><a href="cdibench3.xhtml">CDI/EJB benchmark 3: only one appication-scoped classInterceptedBean method called in a loop</a></li>
+        <li><a href="cdibench4.xhtml">CDI/EJB benchmark 4: only one medthodInterceptedBean method called in a loop</a></li>
+        <li><a href="cdibench5.xhtml">CDI/EJB benchmark 5: only one medthodInterceptedBean method called in a loop, no interceptor called!</a></li>
+        <li><a href="cdibench12.xhtml">CDI/EJB benchmark 12: only the 2 non-interceptor bean-method calls in a loop</a></li>
+        <li><a href="cdibench125.xhtml">CDI/EJB benchmark 125: only the (2+1) non-interceptor bean-method calls in a loop</a></li>
+    </ul></li>
     <li><a href="smallfilebench.xhtml">Small File benchmark</a></li>
     <li><a href="largefilebench.xhtml">Large File benchmark</a></li>
     <li><a href="memoryreadbench.xhtml">Memory read benchmark</a></li>
