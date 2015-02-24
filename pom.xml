@@ -150,7 +150,11 @@
                         <appLocation>../../../../../${project.build.finalName}</appLocation>
                     </bootstrapProperties>                    
                     <jvmOptions>
-                        <param>-Xmx1024m</param>
+                        <param>-Xms128m</param>
+                        <param>-Xmx4096m</param>
+                        <param>-XX:PermSize=196m</param>
+                        <param>-XX:MaxPermSize=196m</param>
+                        <param>-XX:+DisableExplicitGC</param>
                     </jvmOptions>
                     <install>
                         <!--    LICENSECODE:
