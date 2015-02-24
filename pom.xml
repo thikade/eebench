@@ -155,7 +155,8 @@
                     <install>
                         <!--    LICENSECODE:
                             license code for Liberty Profile 8.5.5.4    : L-JTHS-95XRL8
-                            license code for Liberty Profile 8.5.x BETA : L-SWIS-9TFM93
+                            license code for Liberty Profile BETA  2015-01: L-SWIS-9GXN5D
+                            license code for Liberty Profile BETA  2015-02: L-SWIS-9TFM93
                             you can find the license code in the license documents: 
                                 8.5.5.4: http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/8.5.5.4/lafiles/runtime/en.html 
                                 BETA   : http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/beta/lafiles/en.html
@@ -167,12 +168,17 @@
                             BETA version: use '2014.+'
                         -->
                         
+                        <!--  released Liberty Profile version v8.5.5.4  -->
                         <licenseCode>L-JTHS-95XRL8</licenseCode>
                         <version>8.5.+</version>
-                        <!-- path to liberty package jar file  -->
+                        <runtimeUrl>file:///D:/Apps/IBM/LibertyArchives/wlp-developers-runtime-8.5.5.4.jar</runtimeUrl>                    
 
-                        <!-- <runtimeUrl>file:///cygdrive/D/Apps/IBM/LibertyArchives/wlp-developers-runtime-8.5.5.4.jar</runtimeUrl> -->
-                        <runtimeUrl>file:///D:/Apps/IBM/LibertyArchives/wlp-developers-runtime-8.5.5.4.jar</runtimeUrl>
+                        <!--  BETA 2015-02 Liberty Profile version v9 BETA  -->
+                        <!-- <licenseCode>L-SWIS-9TFM93</licenseCode>
+                        <version>2014.+</version>
+                        <runtimeUrl>file:///D:/Apps/IBM/LibertyArchives/wlp-beta-runtime-2015.2.0.0.jar</runtimeUrl> 
+                        -->
+
                     </install>
                 </configuration>
             </plugin>
